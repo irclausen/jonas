@@ -1,0 +1,130 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <nav id="mainNav">
+        <div id="homeNav" class="mainNavItem current"><a href="#">Home</a></div>
+        <div id="aboutNav" class="mainNavItem"><a href="#">About</a></div>
+        <div id="servicesNav" class="mainNavItem"><a href="#">Services</a></div>
+        <div id="testimonialsNav" class="mainNavItem"><a href="#">Testimonials</a></div>
+        <div id="gearNav" class="mainNavItem"><a href="#">Gear</a></div>
+        <div id="contactNav" class="mainNavItem"><a href="#">Contact</a></div>
+      </nav>
+    </header>
+    <div id="main" role="main">
+      <div id="homeContainer" class="navContainer">
+        <div id="home-quoteBox">
+          <div class="arrowsImage"></div>
+          <div class="quoteCopy">&quot;Jonas is my first choice for mixing every production and I can't imagine what I would do without his craft and extraordinary knowledge of mixing and sound design.&quot;</div>
+        </div>
+        <div id="home-pageNav" class="pageNav">
+          <div id="home-news" class="sectionTitle"><span>News</span></div>
+          <div class="pageNavItem selected" id="home-work-nav"><span>Work</span></div>
+          <div class="pageNavItem" id="home-blog-nav"><span>Blog</span></div>
+          <div class="pageNavItem" id="home-media-nav"><span>Media</span></div>
+        </div>
+        <div id="home-contentTitle" class="sectionTitle">
+          <span id="home-contentTitleText">What I've been doing<span>
+        </div>
+        <div id="home-contentBox">
+          <p class="copy">Work Content</p>
+        </div>
+        
+      </div>
+      <div id="aboutContainer" class="navContainer">
+        About
+      </div>
+      <div id="servicesContainer" class="navContainer">
+        Services
+      </div>
+      <div id="testimonialsContainer" class="navContainer">
+        Testimonials
+      </div>
+      <div id="gearContainer" class="navContainer">
+        Gear
+      </div>
+      <div id="contactContainer" class="navContainer">
+        Contact
+      </div>
+    </div>
+    <footer>
+      <div><span>All content Copyright &#169; jonaswestling.com</span></div>
+    </footer>
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <!-- Jonas scripts -->
+  <script src="js/jonas.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.mainNavItem').click(function () {
+        
+      });
+    });
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
