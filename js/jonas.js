@@ -44,6 +44,21 @@ function updateContent() {
 			$("#home-contentBox p").text("Please select work, blog, or media.");
 			break;
 	}
+
+	switch ($("#services-pageNav").children(".selected").attr("id")) {
+		case "services-mixing-nav":
+			$("#services-contentTitle span").text("Mixing");
+			$("#services-contentBox p").text("This is the mixing content box!");
+			break;
+		case "services-mastering-nav":
+			$("#services-contentTitle span").text("Mastering");
+			$("#services-contentBox p").text("This is the mastering content box!");
+			break;
+		case "services-additionalRecording-nav":
+			$("#services-contentTitle span").text("Additional Recording");
+			$("#services-contentBox p").text("This is the additional recording content box");
+			break;
+	}
 }
 
 $(document).ready(function() {

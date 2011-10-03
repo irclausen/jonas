@@ -328,13 +328,13 @@ body {
   height:40px;
   position:relative;
   top:-130px;
-  left:300px;
+  left:250px;
 }
 
 #home-contentBox {
   position:relative;
-  top:-130px;
-  left:300px;
+  top:-125px;
+  left:250px;
   width:600px;
   height:250px;
   background-image:url("../img/Black80.png");
@@ -364,9 +364,59 @@ body {
   margin-left:10px;
 }
 
-.copy {
+/****** About ******/
+#about-title{
+
+  position:relative;
+  top:40px;
+  left:140px; 
+}
+
+.about-copy{
   padding:10px;
-  font: 14px/20px 'TitilliumText22LRegular', Arial, sans-serif;
+  font: 16px/20px 'TitilliumText22LRegular', Arial, sans-serif;
+  
+}
+
+#about-contentBox {
+  position:relative;
+  top:50px;
+  left:250px;
+  width:800px;
+  height:400px;
+  background-image:url("../img/Black80.png");
+}
+
+/****** Services ******/
+#services-pageNav {
+  position:relative;
+  top: 50px;
+}
+
+#services-contentTitle {
+  width:200px;
+  height:40px;
+  position:relative;
+  top:-240px;
+  left:250px;
+  background-image:url("../img/Black80.png");
+}
+
+#services-contentBox {
+  position:relative;
+  top:-230px;
+  left:250px;
+  width:600px;
+  height:450px;
+  background-image:url("../img/Black80.png");
+  text-align:left;
+}
+
+.copy {
+  margin-top:0px;
+  padding:10px;
+  font: 16px/20px 'TitilliumText22LRegular', Arial, sans-serif;
+  text-align:left;
 }
 
 
