@@ -58,6 +58,37 @@ function updateContent() {
 			$("#services-contentTitle span").text("Additional Recording");
 			$("#services-contentBox p").text("This is the additional recording content box");
 			break;
+		case "services-musicEditing-nav":
+			$("#services-contentTitle span").text("Music Editing");
+			$("#services-contentBox p").text("This is the music editing content box!");
+			break;
+		case "services-proToolsEducation-nav":
+			$("#services-contentTitle span").text("Pro Tools Education");
+			$("#services-contentBox p").text("This is the Pro Tools Education content box!");
+			break;
+		case "services-other-nav":
+			$("#services-contentTitle span").text("Other Audio Services");
+			$("#services-contentBox p").text("This is the Other Audio Services content box!");
+			break;
+		default:
+			$("#services-contentTitle span").text("Mixing");
+			$("#services-contentBox p").text("This is the mixing content box!");
+			break;
+	}
+
+	switch ($("#gear-pageNav").children(".selected").attr("id")) {
+		case "gear-philosophy-nav":
+			$("#gear-contentTitle span").text("Philosophy");
+			$("#gear-contentBox").html("<p class='copy'>In today's digital age you no longer need big expensive analog mixing desks and tons of analog outboard to be able to make brilliant records. More and more records being released today is completely mixed &quot;in the box&quot; which means mixing everything in the computer using plug-ins.</p>");
+			break;
+		case "gear-equipmentList-nav":
+			$("#gear-contentTitle span").text("Equipment List");
+			$("#gear-contentBox").html("<p>Hardware and Instruments</p><ul><li>Pro Tools HD2</li><li>Lynx Aurora 16 Converters</li><li>API 2500 buss Compressor</li><li>Vintage design SU1 &quot;Neve 1272 style&quot; summing amp</li><li>Genelec monitoring</li><li>Sonica labs (Hush QR extreme) quad xeon computer </li><li>TC Electronics </li><li>Music Man Guitars</li><li>Ibanez Guitars</li><li>Mesa Boogie Amps</li><li>Terratec Axon AX100 Guitar to Midi Converter</li></ul>");
+			break;
+		default:
+			$("#gear-contentTitle span").text("Philosophy");
+			$("#gear-contentBox").html("<p class='copy'>In today's digital age you no longer need big expensive analog mixing desks and tons of analog outboard to be able to make brilliant records. More and more records being released today is completely mixed &quot;in the box&quot; which means mixing everything in the computer using plug-ins.</p>");
+			break;
 	}
 }
 

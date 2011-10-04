@@ -299,6 +299,7 @@ body {
   left:10px;
   width:180px;
   height:40px;
+  cursor:pointer;
 }
 
 .pageNavItem.selected {
@@ -410,6 +411,50 @@ body {
   height:450px;
   background-image:url("../img/Black80.png");
   text-align:left;
+}
+
+
+#gear-pageNav {
+  position:relative;
+  top:50px;
+}
+
+#gear-contentTitle{
+  width:200px;
+  height:40px;
+  position:relative;
+  top:-60px;
+  left:250px;
+  background-image:url("../img/Black80.png");
+}
+
+#gear-contentBox {
+  position:relative;
+  top:-50px;
+  left:250px;
+  width:600px;
+  height:450px;
+  background-image:url("../img/Black80.png");
+  text-align:left;
+  overflow:scroll;
+}
+
+#contact-contentBox {
+  position:relative;
+  top:50px;
+  left:250px;
+  width:600px;
+  height:450px;
+  background-image:url("../img/Black80.png");
+  text-align:left;
+}
+
+#contact-contentBox span {
+  margin:10px;
+}
+
+#contact-contentBox a {
+  color:#7C5B1D;
 }
 
 .copy {
